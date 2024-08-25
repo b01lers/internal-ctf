@@ -8,7 +8,7 @@ export default async function Header() {
     return (
         <header className="container flex flex-col items-center justify-center h-screen">
             <img
-                src="/assets/logo-uwu.png"
+                src="/assets/logo-internal.png"
                 className="max-h-96"
             />
             <p className="mb-2 max-w-3xl text-center text-pretty">
