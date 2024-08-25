@@ -12,7 +12,7 @@ export default async function Header() {
                 className="max-h-96"
             />
             <p className="mb-2 max-w-3xl text-center text-pretty">
-                Welcome to b01lers internal CTF! B01lers internal CTF is both a training camp to sharpen your CTF
+                Welcome to b01lers internal CTF! b01lers internal CTF is both a training camp to sharpen your CTF
                 skills, and a look at past b01lers CTF challenges. Check out the{' '}
                 <a href="https://discord.gg/tBMqujE" target="_blank" rel="noopener noreferrer" className="text-theme-bright hover:underline">Discord</a>{' '}
                 and enjoy!
