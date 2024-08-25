@@ -4,7 +4,7 @@ services:
     image: redpwn/rctf:${RCTF_GIT_REF}
     restart: always
     ports:
-      - '9000:80'
+      - '9001:80'
     networks:
       - rctf
     env_file:
@@ -41,7 +41,7 @@ services:
       dockerfile: ./Dockerfile
       context: ../bctf
     ports:
-      - "9123:3000"
+      - "9124:3000"
     restart: always
 
 networks:
