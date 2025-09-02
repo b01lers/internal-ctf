@@ -1,4 +1,4 @@
-const RCTF_BASE = 'http://ctf.b01lers.com:9001';
+const RCTF_BASE = 'https://rctf-internal.b01lers.com/';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
