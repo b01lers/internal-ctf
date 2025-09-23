@@ -16,7 +16,7 @@ const nextConfig = {
         return [
             {
                 source: '/api/v1/:path*',
-                destination: `${this.env.API_BASE}/:path*`
+                destination: `${RCTF_BASE}/api/v1/:path*`
             },
             {
                 source: '/uploads',
@@ -26,4 +26,4 @@ const nextConfig = {
     }
 }
 
-module.exports = nextConfig
+module.exports = nextConfig;
