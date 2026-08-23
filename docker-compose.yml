@@ -3,10 +3,16 @@ services:
   rctf:
     image: redpwn/rctf:${RCTF_GIT_REF}
     restart: always
-    ports:
-      - '9001:80'
+    labels:
+      - "traefik.http.routers.${COMPOSE_PROJECT_NAME}.rule=Host(`rctf-internal.b01lers.net`)"
+      - "traefik.http.services.${COMPOSE_PROJECT_NAME}.loadbalancer.server.port=80"
+      - "traefik.http.routers.${COMPOSE_PROJECT_NAME}.tls={}"
+      - "traefik.http.routers.${COMPOSE_PROJECT_NAME}.entrypoints=websecure"
+    expose:
+      - "80"
     networks:
       - rctf
+      - traefuck
     env_file:
       - .env
     environment:
@@ -35,14 +41,9 @@ services:
       - rctf
     volumes:
       - ./data/rctf-postgres:/var/lib/postgresql/data
-  bctf:
-    container_name: bctf-internal
-    build:
-      dockerfile: ./Dockerfile
-      context: ../bctf
-    ports:
-      - "9124:3000"
-    restart: always
 
 networks:
   rctf: {}
+  traefuck:
+    name: traefuck
+    external: true

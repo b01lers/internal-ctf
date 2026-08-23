@@ -26,7 +26,7 @@ npm i
 In `next.config.js`, set `RCTF_BASE` to the public URL of the backend rCTF instance, and `KLODD_URL` to the public URL of
 the Klodd instancer frontend:
 ```js
-const RCTF_BASE = 'http://ctf.b01lers.com:9000';
+const RCTF_BASE = 'http://ctf.b01lers.net:9001';
 
 const nextConfig = {
     env: {

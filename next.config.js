@@ -1,10 +1,10 @@
-const RCTF_BASE = 'http://ctf.b01lers.com:9001';
+const RCTF_BASE = 'http://ctf.b01lers.net:9001';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     env: {
         API_BASE: `${RCTF_BASE}/api/v1`,
-        KLODD_URL: 'https://instancer.b01lersc.tf'
+        KLODD_URL: 'https://instancer.b01lers.net'
     },
     logging: {
         fetches: {
