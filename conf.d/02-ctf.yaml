@@ -1,12 +1,14 @@
 origin: https://internal.b01lersc.tf
 divisions:
   open: Open
-  purdue: Purdue
+  purdue-human: Purdue (human division)
+  purdue-ai: Purdue (unrestricted division)
 divisionACLs:
   - match: domain
     value: purdue.edu
     divisions:
-      - purdue
+      - purdue-human
+      - purdue-ai
       - open
   - match: any
     value: ''
